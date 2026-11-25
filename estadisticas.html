@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estadísticas de relación · Pregrado</title>
+<link rel="stylesheet" href="assets/css/estadisticas.css">
+</head><body>
+<div class="shell"><div class="logo">H</div><h1>Estadísticas de relación · Ubicación / REG / NRC</h1><span class="pill" data-periodo>Periodo …</span><a class="tbtn" href="index.html">⌂ Inicio</a><button class="tbtn" id="th">◐ Tema</button></div>
+<main>
+  <section class="bar">
+    <label>Agrupar por
+      <select id="modo"><option value="pabe">Pabellón</option><option value="aula">Aula</option><option value="lab">Laboratorio / taller</option></select></label>
+    <label>Programa <select id="prog"><option value="">Todos</option></select></label>
+    <label>Ordenar por
+      <select id="orden"><option value="reg">Alumnos (REG)</option><option value="nrc">NRC</option><option value="prom">REG por NRC</option><option value="ocup">Ocupación</option><option value="nom">Ubicación (A–Z)</option></select></label>
+    <input type="search" id="q" placeholder="Buscar ubicación…">
+    <button class="btn" id="csv">⬇ Exportar CSV</button>
+  </section>
+  <section class="kpis" id="kp"></section>
+  <section class="card"><h2>Detalle por ubicación</h2><div class="tw"><table class="tb" id="tb"></table></div><p class="nota" id="nt"></p></section>
+</main>
+<div class="pn" id="pn"><div class="pb" id="pb"></div></div>
+<footer id="pie"></footer>
+<script src="assets/js/datos.js" data-app="estadisticas"></script>
+</body></html>
